@@ -1,0 +1,189 @@
+[
+    {
+        "_id" : "67f71a03523d00258894a4e5",
+        "name" : "Бојлери",
+        "description" : "Water heater",
+        "parent_id" : "67f71a03523d00258894a4d6",
+        "hasChilds" : false,
+        "tags" : [
+
+        ]
+    },
+    {
+        "_id" : "67f71a03523d00258894a4db",
+        "name" : "Машини за сушење алишта",
+        "description" : "Drying machines designed exclusively for laundry drying, without washing functionality or combined washer-dryer features",
+        "parent_id" : "67f71a03523d00258894a4d9",
+        "hasChilds" : false,
+        "tags" : [
+
+        ]
+    },
+    {
+        "_id" : "67f71a03523d00258894a4e0",
+        "name" : "Вградливи рерни",
+        "description" : "Built-in ovens designed for seamless integration into kitchen cabinetry, providing efficient baking and cooking",
+        "parent_id" : "67f71a03523d00258894a4df",
+        "hasChilds" : false,
+        "tags" : [
+
+        ]
+    },
+    {
+        "_id" : "67f71a03523d00258894a4da",
+        "name" : "Машини за перење алишта",
+        "description" : "Washing machines exclusively for laundry cleaning, without drying functionality or combined washer-dryer features.",
+        "parent_id" : "67f71a03523d00258894a4d9",
+        "hasChilds" : false,
+        "tags" : [
+
+        ]
+    },
+    {
+        "_id" : "67f71a03523d00258894a4e1",
+        "name" : "Вградливи плотни",
+        "description" : "Built-in cooktops designed for seamless kitchen integration, providing efficient and space-saving cooking.",
+        "parent_id" : "67f71a03523d00258894a4df",
+        "hasChilds" : false,
+        "tags" : [
+
+        ]
+    },
+    {
+        "_id" : "67f71a03523d00258894a4e3",
+        "name" : "Микробранови печки",
+        "description" : null,
+        "parent_id" : "67f71a03523d00258894a4d6",
+        "hasChilds" : false,
+        "tags" : [
+
+        ]
+    },
+    {
+        "_id" : "67f71a03523d00258894a4d9",
+        "name" : "Машини за алишта",
+        "description" : null,
+        "parent_id" : "67f71a03523d00258894a4d6",
+        "hasChilds" : true,
+        "tags" : [
+
+        ]
+    },
+    {
+        "_id" : "67f71a03523d00258894a4d8",
+        "name" : "Замрзнувачи",
+        "description" : null,
+        "parent_id" : "67f71a03523d00258894a4d6",
+        "hasChilds" : false,
+        "tags" : [
+
+        ]
+    },
+    {
+        "_id" : "67f71a03523d00258894a4dc",
+        "name" : "Машини за перење и сушење алишта",
+        "description" : "Combined washer-dryer machines designed for both laundry washing and drying in a single unit.",
+        "parent_id" : "67f71a03523d00258894a4d9",
+        "hasChilds" : false,
+        "tags" : [
+
+        ]
+    },
+    {
+        "_id" : "67f71a03523d00258894a4de",
+        "name" : "Шпорети",
+        "description" : "Stoves designed for cooking and baking, available in various fuel types including electricity, gas, a combination of gas and electricity, wood, and compact mini-versions for space efficiency. They feature a built-in cooktop and oven, catering to diverse cooking needs and preferences.",
+        "parent_id" : "67f71a03523d00258894a4d6",
+        "hasChilds" : false,
+        "tags" : [
+
+        ]
+    },
+    {
+        "_id" : "67f71a03523d00258894a4e4",
+        "name" : "Аспиратори",
+        "description" : null,
+        "parent_id" : "67f71a03523d00258894a4d6",
+        "hasChilds" : false,
+        "tags" : [
+
+        ]
+    },
+    {
+        "_id" : "67f71a03523d00258894a4e2",
+        "name" : "Вградливи сетови од рерна и плотна",
+        "description" : "Built-in oven and cooktop sets designed for seamless kitchen integration, offering a complete cooking solution",
+        "parent_id" : "67f71a03523d00258894a4df",
+        "hasChilds" : false,
+        "tags" : [
+
+        ]
+    },
+    {
+        "_id" : "67f71a03523d00258894a4df",
+        "name" : "Вградливи фурни и плотни",
+        "description" : null,
+        "parent_id" : "67f71a03523d00258894a4d6",
+        "hasChilds" : true,
+        "tags" : [
+
+        ]
+    },
+    {
+        "_id" : "67f71a03523d00258894a4dd",
+        "name" : "Машини за миење садови",
+        "description" : null,
+        "parent_id" : "67f71a03523d00258894a4d6",
+        "hasChilds" : false,
+        "tags" : [
+
+        ]
+    },
+    {
+        "_id" : "67f71a03523d00258894a4e6",
+        "name" : "Останато од бела техника",
+        "description" : "Products related to white goods that do not fit into the specified subcategories.",
+        "parent_id" : "67f71a03523d00258894a4d6",
+        "hasChilds" : false,
+        "tags" : [
+            "other",
+            "бела техника",
+            "останато",
+            "Фрижидери",
+            "Замрзнувачи",
+            "Машини за алишта",
+            "Машини за перење алишта",
+            "Машини за сушење алишта",
+            "Машини за перење и сушење алишта",
+            "Машини за миење садови",
+            "Шпорети",
+            "Вградливи фурни и плотни",
+            "Вградливи рерни",
+            "Вградливи плотни",
+            "Вградливи сетови од рерна и плотна",
+            "Микробранови печки",
+            "Аспиратори",
+            "Бојлери"
+        ]
+    },
+    {
+        "_id" : "67f71a03523d00258894a4d7",
+        "name" : "Фрижидери",
+        "description" : null,
+        "parent_id" : "67f71a03523d00258894a4d6",
+        "hasChilds" : false,
+        "tags" : [
+
+        ]
+    },
+    {
+        "_id" : "67f71a03523d00258894a4d6",
+        "name" : "Бела техника",
+        "description" : null,
+        "parent_id" : null,
+        "hasChilds" : true,
+        "tags" : [
+
+        ]
+    }
+]
