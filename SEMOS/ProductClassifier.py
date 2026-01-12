@@ -1,4 +1,4 @@
-from openai import OpenAI
+#from openai import OpenAI
 import json
 from conf_file import openAi_key, groq_api
 from groq import Groq

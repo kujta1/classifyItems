@@ -7,11 +7,6 @@ with open("categories.json", "r", encoding="utf-8") as f:
     categories = json.load(f)
 with open("products.json", "r", encoding="utf-8") as f:
     products = json.load(f)
-preprocessor = JsonPreprocessor()
-
-from ProductClassifier import ProductClassifier
-from JsonProcessor import JsonPreprocessor
-
 
 class Execute:
     def __init__(self, products: list, category: dict, api_key: str):
@@ -36,28 +31,28 @@ class Execute:
         positive = 0
         negative = 0
         skipped = 0
-        while self.num < 800:
-            for product in self.products:
-                print(self.num)
-                self.num += 1
 
-                clean_product = self.preprocessor.normalize_product(product)
+        for product in self.products:
+            print(self.num)
+            self.num += 1
 
-                # 🔥 SKIP LLM CALL IF KEYWORDS DON'T MATCH
-                if not self.keyword_prefilter(self.category, clean_product):
-                    skipped += 1
-                    continue
+            clean_product = self.preprocessor.normalize_product(product)
 
-                matcher = ProductClassifier(
-                    self.category,
-                    clean_product,
-                    self.api_key,
-                )
+            # SKIP LLM CALL IF KEYWORDS DON'T MATCH
+            if not self.keyword_prefilter(self.category, clean_product):
+                skipped += 1
+                continue
 
-                if matcher.is_match():
-                    positive += 1
-                else:
-                    negative += 1
+            matcher = ProductClassifier(
+                self.category,
+                clean_product,
+                self.api_key,
+            )
+
+            if matcher.is_match():
+                positive += 1
+            else:
+                negative += 1
 
         return {
             "positive_matches": positive,
@@ -68,7 +63,7 @@ class Execute:
 if __name__ == "__main__":
     executor = Execute(
         products=products,
-        category=categories[8],  # list loaded from categories.json
+        category=categories[8],
         api_key = groq_api
     )
 
