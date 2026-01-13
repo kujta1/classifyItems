@@ -97,4 +97,5 @@ class ClassifierFrizideri(Classifier):
         pass
 
 evaluator = Evaluation(ClassifierFrizideri())
+
 evaluator.evaluate_All_products()
