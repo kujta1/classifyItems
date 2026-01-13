@@ -23,6 +23,7 @@ class ClassifierOShporeti(Classifier):
 
     def classify(self, item):
         # TODO
+        #finshed
         # Vashiot KOD TUKA
 
         return None, None
