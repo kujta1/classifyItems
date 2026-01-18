@@ -15,23 +15,14 @@ class ClassifierOstanato(Classifier):
     
     def classify(self, item):
         breadcrumbs = item.get("Breadcrumbs", "")
-        product_name = item.get("ProductName", "")
+        # product_name = item.get("ProductName", "")
 
         if (re.search("Аспиратори", breadcrumbs, re.IGNORECASE) and
             not re.search("Дополнителна", breadcrumbs, re.IGNORECASE) and
-            not re.search("Додатен прибор", breadcrumbs, re.IGNORECASE) and
-            not re.search("Филтер", breadcrumbs, re.IGNORECASE)):
+            not re.search("Додатен прибор", breadcrumbs, re.IGNORECASE)):
             return self.classes_list[0], self.classes_map[self.classes_list[0]]
         
-        elif (re.search("Бојлери", breadcrumbs, re.IGNORECASE) or
-            re.search("бојлер", product_name, re.IGNORECASE) or
-            re.search("проточен бојлер", breadcrumbs, re.IGNORECASE) or
-            re.search("Електрична чешма", breadcrumbs, re.IGNORECASE) or
-            re.search("Електрична батерија", breadcrumbs, re.IGNORECASE) or
-            re.search("Батерија високомонтажна", breadcrumbs, re.IGNORECASE) or
-            re.search("Батерија нискомонтажна", breadcrumbs, re.IGNORECASE) or
-            re.search("проточна", breadcrumbs, re.IGNORECASE) or
-            re.search("елек.батерија", breadcrumbs, re.IGNORECASE)):
+        elif re.search("Бојлери", breadcrumbs, re.IGNORECASE):
             return self.classes_list[1], self.classes_map[self.classes_list[1]]
         
         else:
