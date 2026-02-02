@@ -1,5 +1,6 @@
 from classifier import Classifier
 from evaluate import Evaluation
+import re
 
 
 class ClassifierOShporeti(Classifier):
@@ -25,8 +26,21 @@ class ClassifierOShporeti(Classifier):
         # TODO
         #finshed
         # Vashiot KOD TUKA
-
-        return None, None
+        if re.search("Вградливи сетови од рерна и плотна",item.get("Breadcrumbs"),re.IGNORECASE):
+            return ("Вградливи сетови од рерна и плотна")
+        elif re.search("Вградливи фурни и плотни",item.get("Breadcrumbs"),re.IGNORECASE):
+            return ("Вградливи фурни и плотни")
+        elif re.search("Вградливи рерни",item.get("Breadcrumbs"),re.IGNORECASE):
+            return ("Вградливи рерни")
+        elif re.search("Вградливи плотни",item.get("Breadcrumbs"),re.IGNORECASE):
+            return ("Вградливи плотни")
+        elif re.search("Микробранови печки", item.get("Breadcrumbs"), re.IGNORECASE):
+            return ("Микробранови печки")
+        elif re.search("Шпорети", item.get("Breadcrumbs"), re.IGNORECASE):
+            return ("Шпорети")
+        else:
+            return ("None")
+        
 
     def generate_structure(self, item):
         # TODO
