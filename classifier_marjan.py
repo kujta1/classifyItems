@@ -1,6 +1,9 @@
 import re
+import json
+import time
 from classifier import Classifier
 from evaluate import Evaluation
+from groq import Groq
 
 
 class ClassifierFrizideri(Classifier):
@@ -48,8 +51,7 @@ with open('products.json', 'r', encoding='utf-8') as file:
 total_products = len(products_data)
 print("Total number of products:", total_products)
 
-
-
+# Description prompt
     def generate_structure(self, item):
         # TODO
         # Vashiot KOD TUKA
